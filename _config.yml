@@ -1,0 +1,10 @@
+title: JavaScript Learning
+description: Test-driven JavaScript exercises and docs
+
+# Build Pages from the docs/ directory
+source: ./docs
+
+# Simple theme (built-in)
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme

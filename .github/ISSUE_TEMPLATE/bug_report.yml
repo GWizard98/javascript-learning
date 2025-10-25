@@ -1,0 +1,53 @@
+name: Bug report
+about: Create a report to help us improve
+labels: bug
+assignees: ''
+
+title: "bug: <short description>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the bug
+      placeholder: e.g. Tests fail when passing negative numbers to multiply
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal steps to reproduce the issue
+      placeholder: |
+        1. Run npm test
+        2. Observe failure in exercises/basics/multiply.test.js
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: Node 20.x on macOS 14
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context / screenshots
+      placeholder: Add any other context here.

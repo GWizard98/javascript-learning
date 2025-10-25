@@ -1,0 +1,26 @@
+[package]
+name = "cyber_guardian"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.100"
+chrono = { version = "0.4.42", features = ["serde"] }
+clap = { version = "4.5.49", features = ["derive"] }
+csv = "1.3.1"
+linfa = { version = "0.8.0", features = ["default"] }
+linfa-clustering = "0.8.0"
+ndarray = "0.16.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+
+axum = "0.7.0"
+tokio = { version = "1.0", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.4", features = ["fs", "cors"] }
+notify = "6.1"
+reqwest = { version = "0.11", features = ["json"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+rand = "0.8"

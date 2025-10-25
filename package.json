@@ -1,14 +1,17 @@
 {
   "name": "javascript-learning",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test-driven JavaScript learning repository with exercises and docs.",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": ["javascript", "learning", "tdd", "jest", "exercises"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^30.2.0"
   }

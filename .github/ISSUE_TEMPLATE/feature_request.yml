@@ -1,0 +1,39 @@
+name: Feature request
+about: Suggest an idea for this project
+labels: enhancement
+assignees: ''
+
+title: "feat: <short description>"
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the feature
+      placeholder: Add an exercise for array chunking
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature valuable?
+      placeholder: Reinforces loops and array slicing concepts
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Outline the approach, API, and test ideas
+      placeholder: Function signature, test cases, edge conditions
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context

@@ -5,96 +5,121 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![GitHub stars](https://img.shields.io/github/stars/GWizard98/javascript-learning?style=social)
 
-# 🚀 JavaScript Learning Journey
+# 🚀 Java & JavaScript Learning Journey (50/50)
 
-**From Zero to JavaScript Hero** - A comprehensive, hands-on learning path with 100+ exercises, real-world projects, and a bonus Java track.
+**Master Both Languages Together** - A comprehensive dual-language learning platform with 150+ exercises, cross-language projects, and professional development paths.
 
-> **🎯 Perfect for**: Absolute beginners, bootcamp students, self-taught developers, and anyone wanting to master JavaScript fundamentals through practice.
+> **🎯 Perfect for**: Developers learning their second language, full-stack engineers, bootcamp students, and anyone wanting to understand how JavaScript and Java complement each other.
 
-## 🌟 Why This Repository?
+## 🌟 Why Learn Both Languages?
 
-- **📈 Progressive Difficulty**: Start with variables, end building full-stack applications
-- **🧪 Test-Driven**: Every concept backed by automated tests (Jest)
-- **🛠️ Real Projects**: Build actual applications, not just toy examples
-- **📚 Comprehensive**: 6 learning tracks + bonus Java fundamentals
-- **🤝 Community**: Active support, code reviews, and learning challenges
+- **🔄 Cross-Language Skills**: Understand concepts in both frontend and backend contexts
+- **📈 Career Flexibility**: Full-stack opportunities with modern JavaScript + enterprise Java
+- **🧪 Test-Driven**: Every concept tested in both languages (Jest + JUnit)
+- **🛠️ Real Projects**: Build complete applications with JS frontend + Java backend
+- **📚 Comprehensive**: Equal coverage of both languages with comparison exercises
+- **🤝 Community**: Learn from developers skilled in both ecosystems
 
-## 🎮 Quick Demo
+## 🎮 Quick Demo - Choose Your Language
 
+### JavaScript Track
 ```bash
-# 1. Clone and setup (2 minutes)
+# 1. Clone and setup 
 git clone https://github.com/GWizard98/javascript-learning.git
 cd javascript-learning && npm install
 
-# 2. Run your first test
-npm test -- sum
-# ✓ Passes 3 tests in 0.2s
+# 2. Run JavaScript tests
+npm test javascript/exercises/basics/sum
+# ✓ JavaScript: 3 tests passing
 
-# 3. Try an intermediate challenge
-npm test -- array-methods
-# ✓ Advanced array operations: 25+ tests passing
-
-# 4. Build a real project
-open projects/intermediate-todo-app/index.html
-# 🚀 Full-featured todo app with local storage
+# 3. Try advanced JS concepts
+npm test javascript/exercises/oop/classes-and-objects
+# ✓ OOP in JavaScript: 25+ tests passing
 ```
 
-## 📊 Learning Progress Tracker
+### Java Track  
+```bash
+# 1. Test Java setup
+cd java && mvn test
+# ✓ Java: 70+ tests passing
 
-Track your journey through structured levels with clear milestones:
-
-### 🟢 Beginner Track (1-2 weeks)
-- [ ] **Variables & Types** → `exercises/basics/` (4 exercises) 
-- [ ] **Functions** → `exercises/basics/` (2 exercises)
-- [ ] **🎯 Milestone Project**: Enhanced Calculator → `projects/calculator/`
-
-### 🟡 Intermediate Track (2-3 weeks)
-- [ ] **Array Methods** → `exercises/intermediate/` (6 real-world challenges)
-- [ ] **Async JavaScript** → `exercises/async/` (8 API interaction patterns)  
-- [ ] **DOM Manipulation** → `exercises/dom/` (Interactive web features)
-- [ ] **🎯 Milestone Project**: Advanced Todo App → `projects/intermediate-todo-app/`
-
-### 🟠 Advanced Track (3-4 weeks)
-- [ ] **ES6+ Features** → `exercises/es6-plus/` (Modern JavaScript)
-- [ ] **Testing Strategies** → Advanced Jest patterns
-- [ ] **Performance** → Optimization techniques
-- [ ] **🎯 Capstone Project**: Full-Stack Application
-
-### 🎁 Bonus: Java Track
-- [ ] **Java Fundamentals** → `java-bonus/` (70+ tests)
-- [ ] **OOP Concepts** → Compare with JavaScript classes
-- [ ] **Cross-Language Skills** → Backend + Frontend integration
-
-## Overview
-This repository helps you master JavaScript fundamentals through hands-on exercises backed by unit tests. Each concept is introduced with a simple function and an accompanying spec to reinforce TDD habits from day one.
-
-- Online Docs: https://GWizard98.github.io/javascript-learning
-
-## Project Structure
+# 2. Compare with JavaScript
+mvn test -Dtest=*OOPTest
+# ✓ Same concepts, Java syntax
 ```
-javascript-learning/
-├─ exercises/
-│  └─ basics/
-│     ├─ sum.js
-│     ├─ sum.test.js
-│     ├─ multiply.js
-│     └─ multiply.test.js
-├─ java-bonus/                    # 🎁 Bonus Java Learning Module
-│  ├─ src/main/java/learning/     # Complete Java fundamentals
+
+### Cross-Language Projects
+```bash
+# Full-stack application
+cd cross-language-projects/task-manager
+# JavaScript frontend + Java backend
+```
+
+## 📊 Dual-Language Learning Paths
+
+**Choose your learning style**: Side-by-side comparison or deep-dive single language
+
+### 🔄 Cross-Language Track (Recommended - 6-8 weeks)
+- [ ] **Week 1-2**: Variables & Functions in both JS and Java
+- [ ] **Week 3-4**: OOP Concepts - Compare ES6 Classes vs Java Classes  
+- [ ] **Week 5-6**: Data Structures - Arrays/Collections in both languages
+- [ ] **Week 7-8**: **🎯 Capstone**: Full-stack app (JS frontend + Java backend)
+
+### 🟨 JavaScript Specialist Track (4-5 weeks)
+- [ ] **Fundamentals** → `javascript/exercises/basics/` (20+ exercises)
+- [ ] **Modern JS** → `javascript/exercises/es6-plus/`, `javascript/exercises/async/`
+- [ ] **DOM & Web APIs** → `javascript/exercises/dom/` (Required for web dev)
+- [ ] **Advanced OOP** → `javascript/exercises/oop/` (ES6 classes, design patterns)
+- [ ] **🎯 Projects** → `javascript/projects/` (Todo app, interactive sites)
+
+### 🔵 Java Specialist Track (4-5 weeks)  
+- [ ] **Core Java** → `java/src/main/java/learning/basics/` (Variables, Control Flow)
+- [ ] **OOP Mastery** → `java/src/main/java/learning/oop/` (Inheritance, Polymorphism)
+- [ ] **Collections & Algorithms** → `java/src/main/java/learning/basics/ArraysCollections`
+- [ ] **Exception Handling** → `java/src/main/java/learning/exceptions/` 
+- [ ] **🎯 Projects** → Spring Boot APIs, enterprise patterns
+
+### 🌍 Full-Stack Integration
+- [ ] **Task Manager** → `cross-language-projects/task-manager/` 
+- [ ] **E-commerce Platform** → React frontend + Spring Boot backend
+- [ ] **Real-time Chat** → WebSocket integration
+- [ ] **Microservices** → JavaScript BFF + Java services
+## 🏢 Dual-Language Project Structure
+
+```
+java-javascript-learning/
+├─ javascript/                     # 🟨 JavaScript Learning (50%)
+│  ├─ exercises/
+│  │  ├─ basics/                 # Variables, functions, operators
+│  │  ├─ intermediate/           # Array methods, real-world patterns  
+│  │  ├─ async/                  # Promises, async/await, APIs
+│  │  ├─ dom/                    # Interactive web elements (Required)
+│  │  └─ oop/                    # ES6 classes, design patterns
+│  └─ projects/
+│     ├─ calculator/             # Beginner project
+│     └─ intermediate-todo-app/  # Advanced patterns
+├─ java/                           # 🔵 Java Learning (50%)
+│  ├─ src/main/java/learning/
+│  │  ├─ basics/                 # Variables, control flow, strings
+│  │  ├─ oop/                    # Classes, inheritance, polymorphism
+│  │  └─ exceptions/             # Error handling patterns
 │  ├─ src/test/java/learning/     # 70+ JUnit tests
-│  ├─ pom.xml                     # Maven configuration
-│  └─ WARP.md                     # Java-specific instructions
-├─ projects/
-│  └─ combination-lab/            # 🔗 Polyglot Lab (Java + JavaScript)
-└─ docs/
-   ├─ programming-languages-overview.md
-   └─ rust-vs-javascript-code-examples.md
+│  └─ pom.xml                     # Maven configuration
+├─ cross-language-projects/        # 🔄 Full-Stack Integration
+│  └─ task-manager/               # JavaScript frontend + Java backend
+│  └─ combination-lab/            # Advanced polyglot demos
+├─ docs/
+│  ├─ javascript-guide.md          # JS-specific documentation
+│  ├─ java-guide.md               # Java-specific documentation  
+│  └─ language-comparison.md      # Side-by-side concept comparison
+└─ WARP.md                        # Unified dual-language guide
 ```
 
-### Polyglot Bonus: Combination Lab
-A side-by-side Java + JavaScript learning lab with interactive REST, XSS, SAST, and GraphQL demos.
-- Explore: projects/combination-lab/
-- Run all services with Docker: see projects/combination-lab/WARP.md
+### 🌍 Cross-Language Integration Features
+- **Parallel Exercises**: Same concepts implemented in both languages
+- **Full-Stack Projects**: JavaScript frontend + Java Spring Boot backend
+- **Comparison Guides**: Side-by-side syntax and pattern analysis
+- **Career Paths**: Frontend specialist, Backend specialist, or Full-Stack
 
 ## Getting Started
 1) Install dependencies
@@ -144,7 +169,7 @@ test('reverses a string', () => {
 - Testing: mocking, coverage, testing strategies
 - Bonus: DOM basics (optional), TypeScript primer (optional)
 
-### 🎁 Java Bonus Track (`java-bonus/`)
+### 🟦 Java Track (`java/`)
 Complete Java fundamentals with 70+ tests covering:
 - Variables, data types, and type conversion
 - String manipulation and StringBuilder

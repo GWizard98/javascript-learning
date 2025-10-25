@@ -8,6 +8,7 @@ Welcome! This site hosts the documentation for the JavaScript Learning repositor
 ## Guides
 - Programming Languages Overview → programming-languages-overview
 - Rust vs JavaScript Code Examples → rust-vs-javascript-code-examples
+- Polyglot Combination Lab → ../projects/combination-lab/WARP.md
 
 ## Repository Links
 - Source on GitHub: https://github.com/GWizard98/javascript-learning

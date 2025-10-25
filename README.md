@@ -40,10 +40,17 @@ javascript-learning/
 │  ├─ src/test/java/learning/     # 70+ JUnit tests
 │  ├─ pom.xml                     # Maven configuration
 │  └─ WARP.md                     # Java-specific instructions
+├─ projects/
+│  └─ combination-lab/            # 🔗 Polyglot Lab (Java + JavaScript)
 └─ docs/
    ├─ programming-languages-overview.md
    └─ rust-vs-javascript-code-examples.md
 ```
+
+### Polyglot Bonus: Combination Lab
+A side-by-side Java + JavaScript learning lab with interactive REST, XSS, SAST, and GraphQL demos.
+- Explore: projects/combination-lab/
+- Run all services with Docker: see projects/combination-lab/WARP.md
 
 ## Getting Started
 1) Install dependencies

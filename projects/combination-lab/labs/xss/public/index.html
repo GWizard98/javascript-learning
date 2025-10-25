@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>XSS Lab</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+      input { width: 320px; }
+    </style>
+  </head>
+  <body>
+    <h1>XSS Lab</h1>
+    <p>Try entering HTML/JS payloads. This page intentionally uses <code>innerHTML</code> to demonstrate XSS.</p>
+    <input id="inp" placeholder="Type something (e.g., <script>alert('xss')</script>)" />
+    <button id="reflect">Reflect (client)</button>
+    <a id="server-link" href="#" target="_blank">Reflect via server</a>
+    <div id="out"></div>
+
+    <script src="./vuln.js" type="module"></script>
+  </body>
+</html>

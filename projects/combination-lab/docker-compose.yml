@@ -26,3 +26,4 @@ services:
       - ./apps/frontend/public:/usr/src/app/public:ro
       - ./labs/xss/public:/usr/src/app/public/xss:ro
       - ./labs/graphql/public:/usr/src/app/public/graphql:ro
+      - ./labs/auth-jwt/public:/usr/src/app/public/auth-jwt:ro

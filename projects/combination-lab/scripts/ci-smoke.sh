@@ -27,4 +27,11 @@ curl -sf http://localhost:8080/api/hello | tee /tmp/java_hello.json >/dev/null
 echo "Smoke: Micro proxy to Java"
 curl -sf http://localhost:3000/micro/java-hello | tee /tmp/micro_java_hello.json >/dev/null
 
+# Secure endpoint should be 401 without token
+code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/api/secure/hello || true)
+if [ "$code" != "401" ]; then
+  echo "Expected 401 for secure endpoint without token, got $code" >&2
+  exit 1
+fi
+
 echo "OK: smoke tests passed"

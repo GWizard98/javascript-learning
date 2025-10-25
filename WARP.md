@@ -12,6 +12,7 @@ A polyglot learning lab showing how Java (backend) and JavaScript (frontend + mi
   - labs/sast: Java insecure code sample for scanning
   - labs/rest: Fetch examples against Java API
   - labs/graphql: Spring GraphQL + JS client
+  - labs/auth-jwt: JWT-protected Java endpoint + JS token client
 - Orchestration: docker-compose.yml for all services
 
 ## Quick start
@@ -31,6 +32,8 @@ A polyglot learning lab showing how Java (backend) and JavaScript (frontend + mi
   - Open / (homepage) and click “Call Java API” to see JSON from backend.
 - GraphQL lab: http://localhost:3000/graphql/index.html
   - Query Spring GraphQL at http://localhost:8080/graphql
+- Auth (JWT) lab: http://localhost:3000/auth-jwt/index.html
+  - Call secured Java endpoint at http://localhost:8080/api/secure/hello with a Bearer token
 - SAST lab:
   - See labs/sast/java/UnsafeSqlExample.java and run your favorite SAST locally or in CI.
 

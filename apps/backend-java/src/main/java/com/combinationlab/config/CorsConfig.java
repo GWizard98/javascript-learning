@@ -13,9 +13,11 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/graphql")
+                registry.addMapping("/**")
                         .allowedOrigins("http://localhost:3000")
-                        .allowedMethods("GET", "POST");
+                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedHeaders("Content-Type", "Authorization")
+                        .exposedHeaders("Authorization");
             }
         };
     }

@@ -1,0 +1,9 @@
+type Greeting {
+  message: String!
+  from: String!
+  language: String!
+}
+
+type Query {
+  helloGraph(name: String): Greeting!
+}
